@@ -23,6 +23,12 @@ body{
     height: auto;
     background: linear-gradient(0deg, #000, #262626);
 }
+@media screen and (min-width: 300px)and (max-width: 600px){
+    .shadow{
+        min-width:75%;
+    }
+}
+
 .shadow::before, .shadow::after{
     content: '';
     position: absolute;
@@ -66,7 +72,7 @@ body{
 /* **************** */
 #add-task-container{
     width: 85%;
-    padding: 15px 10px;
+    padding: 15px 1.5%;
     background: black;
     border-radius: 200px;
     box-shadow: 0 0 5px;
@@ -81,7 +87,7 @@ body{
 
 input{
     flex: 5;
-    margin-left: 50px;
+    margin-left: 10%;
     border-radius: 10px;
     font-size: 1.2rem;
     padding: 5px;
@@ -112,9 +118,7 @@ input:hover{
     justify-content: center;
     align-items: center;
     font-size: 2rem;
-    font-weight: bold;
-
-    
+    font-weight: bold;    
 }
 #add-task::after{
     content: '';
@@ -128,6 +132,18 @@ input:hover{
 #add-task:hover{
     z-index: 0;
     box-shadow: 40px 0 100px #008cff9c, -40px 0 100px #e100ffb0;
+}
+
+
+@media screen and (min-width: 370px)and (max-width: 600px){
+    #add-task{
+        left: -35%;
+    }
+}
+@media screen and (min-width: 300px)and (max-width: 375px){
+    #add-task{
+        left: -45%;
+    }
 }
 
 /* ------------------ */
